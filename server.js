@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var port = process.env.PORT || 3000;//change for heroku port
+var PORT = process.env.PORT || 3000;//change for heroku port
 var middleWare = require('./middleWare');
 /*app.get('/',function(req,res){
 	res.send("Hello Express!");
@@ -15,7 +15,7 @@ app.get('/about',middleWare.requireAuthentication,function(req,res){
 
 app.use(express.static(__dirname+"/public"));
 
-app.listen(port,function(){
+app.listen(PORT,function(){
 	console.log('Express Server Started');
-	console.log('Running on the port: '+port)
+	console.log('Running on the port: '+PORT)
 });
