@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 3000;//change for heroku port
 var middleWare = require('./middleWare');
 /*app.get('/',function(req,res){
 	res.send("Hello Express!");
